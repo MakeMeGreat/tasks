@@ -8,12 +8,137 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/task1_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="8dp"
+        android:text="task 1: "
+        android:textSize="20sp"
+        android:textStyle="italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task1_result"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:maxLines="1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/task1_text_view"
+        app:layout_constraintStart_toEndOf="@id/task1_text_view"
+        app:layout_constraintTop_toTopOf="@id/task1_text_view"
+        tools:text="result" />
+
+    <TextView
+        android:id="@+id/task2_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="task 2: "
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@id/task1_text_view"
+        app:layout_constraintTop_toBottomOf="@id/task1_text_view" />
+
+    <TextView
+        android:id="@+id/task2_result"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:maxLines="1"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/task2_text_view"
+        app:layout_constraintStart_toEndOf="@+id/task2_text_view"
+        app:layout_constraintTop_toTopOf="@+id/task2_text_view"
+        tools:text="result" />
+
+    <TextView
+        android:id="@+id/task3_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="task 3: "
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/task2_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/task2_text_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/task3_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginHorizontal="8dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/task3_text_view"
+        app:layout_constraintTop_toTopOf="@+id/task3_text_view" />
+
+    <TextView
+        android:id="@+id/task4_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="task 4: "
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/task3_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/task3_recycler_view" />
+
+    <EditText
+        android:id="@+id/task4_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:hint="Type here"
+        android:maxLines="1"
+        app:layout_constraintBottom_toBottomOf="@id/task4_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/task4_text_view"
+        app:layout_constraintTop_toTopOf="@id/task4_text_view" />
+
+    <TextView
+        android:id="@+id/task5a_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="task 5a: "
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/task4_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/task4_text_view" />
+
+    <TextView
+        android:id="@+id/task5a_result"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/task5a_text_view"
+        app:layout_constraintTop_toBottomOf="@id/task5a_text_view"
+        tools:text="a1asdasd \n asdasdasd" />
+
+    <TextView
+        android:id="@+id/task5b_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="task 5b: "
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginEnd="130dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task4_text_view" />
+
+    <TextView
+        android:id="@+id/task5b_result"
+        android:layout_width="180dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/task5b_text_view"
+        app:layout_constraintTop_toBottomOf="@id/task5b_text_view"
+        tools:text="result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
