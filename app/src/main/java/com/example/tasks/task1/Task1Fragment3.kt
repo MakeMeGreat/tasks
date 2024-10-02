@@ -7,8 +7,10 @@ import android.view.ViewGroup
 import com.example.tasks.R
 import com.example.tasks.databinding.Fragment3Task1Binding
 
-class Task1Fragment3 : BaseFragment<Fragment3Task1Binding>(R.layout.fragment3_task1),
+class Task1Fragment3 :
+    BaseFragment<Fragment3Task1Binding>(R.layout.fragment3_task1),
     RouteProvider {
+
     override fun createBinding(
         inflater: LayoutInflater,
         container: ViewGroup?,
