@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.tasks.R
+import com.example.tasks.Task3Fragment
 import com.example.tasks.databinding.Fragment1Task1Binding
 
 class Task1Fragment1 :
@@ -28,6 +29,10 @@ class Task1Fragment1 :
         }
         binding.previousButton.setOnClickListener {
             router.exit()
+        }
+
+        binding.toCustomViewButton.setOnClickListener {
+            router.navigateTo(Task3Fragment())
         }
     }
 }
