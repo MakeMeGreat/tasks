@@ -16,7 +16,6 @@ class CustomRectangle @JvmOverloads constructor(
 ) : View(context, attrs, defStyleAtt) {
 
     private val paint = Paint()
-
     private var fillPart: Float = 1.0F
 
     init {
